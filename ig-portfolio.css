@@ -1,0 +1,221 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.ig-portfolio {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.ig-portfolio .image {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.ig-portfolio .image:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.ig-portfolio .image.left {
+  width: 33.3333333333%;
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+.ig-portfolio .text {
+  display: block;
+  clear: right;
+}
+
+.ig-portfolio .title h2 {
+  display: inline-block;
+  clear: right;
+  padding: 0 0 4px 0;
+  margin: 0 0 4px 0;
+}
+
+.ig-portfolio .meta {
+  font-size: 14px;
+  padding: 4px 0 10px 0;
+  color: #888;
+  clear: both;
+}
+
+.ig-portfolio .meta .cat-name:before {
+  content: "·";
+  margin: 0 4px;
+}
+
+.ig-project-details .customer,
+.ig-project-details .project,
+.ig-project-details .website {
+  display: block;
+  border-bottom: 1px dotted #dedede;
+  padding: .5em 0;
+}
+
+.ig-project-details .cat-name {
+  display: block;
+}
+
+.ig-project-details .cat-title {
+  margin-top: 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.ig-project-details .categories li {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ig-portfolio-gallery {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ig-portfolio-gallery::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.ig-portfolio-gallery .gallery-image {
+  clear: both;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ig-portfolio-gallery .gallery-image:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.ig-portfolio-gallery .title {
+  clear: both;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.ig-portfolio-gallery .title a, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a:hover, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a:hover, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a:focus, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a:focus, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a.current, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a.current {
+  color: #999;
+  font-weight: normal;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.ig-portfolio-gallery .title a:hover, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a:hover, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a:hover, .ig-portfolio-gallery .title a:focuds, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a:focuds:hover, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a:focuds:hover, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a:focuds:focus, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a:focuds:focus, .ig-portfolio-gallery .title .ig-potfolio-page ul.page-numbers li a.current:focuds, .ig-potfolio-page ul.page-numbers li .ig-portfolio-gallery .title a.current:focuds {
+  color: #666;
+  font-weight: 300;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.ig-portfolio-gallery .gallery-project {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-bottom: 15px;
+}
+
+.ig-portfolio-gallery .gallery-project:last-child {
+  margin-right: 0;
+}
+
+.ig-portfolio-gallery .gallery-project:nth-child(4n) {
+  margin-right: 0;
+}
+
+.ig-portfolio-gallery .gallery-project:nth-child(4n+1) {
+  clear: left;
+}
+
+/*pagination*/
+.ig-potfolio-page ul.page-numbers {
+  background: #fff;
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: inline-block;
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  border-left: none;
+  border-radius: 2px;
+}
+
+.ig-potfolio-page ul.page-numbers li {
+  display: inline-block;
+  float: left;
+  padding: .2em .8em;
+  margin: 0;
+  border-left: 1px solid #dedede;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+
+.ig-potfolio-page ul.page-numbers li a, .ig-potfolio-page ul.page-numbers li a:hover, .ig-potfolio-page ul.page-numbers li a:focus, .ig-potfolio-page ul.page-numbers li a.current {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+/*widget*/
+.ig-portfolio-project .project-date {
+  font-size: .8em;
+  color: #888;
+}
+
+.ig-portfolio-project .project-date:before {
+  content: "·";
+  margin: 0 2px;
+}
+
+/*responsive*/
+@media screen and (max-width: 35.5em) {
+  .ig-portfolio-gallery .gallery-project {
+    width: 100%;
+    clear: both;
+  }
+  .ig-portfolio .image.left {
+    width: 100%;
+    clear: both;
+    margin: 10px 0;
+  }
+}
